@@ -19,7 +19,7 @@ public class WC {
 		System.out.println("输入指令：");
      
  
-    	Scanner input=new Scanner(System.in);
+    	Scanner input=new Scanner(System.in);  //从键盘上输入指令并执行
     	String commend=input.nextLine();
     	switch (commend) {
 		case "-l":

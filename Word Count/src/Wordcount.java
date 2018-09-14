@@ -6,7 +6,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class Wordcount {
-	String REGEX ="[a-zA-Z]+\\b";
+	String REGEX ="[a-zA-Z]+\\b";   //判定为单词的正则表达式条件
       Wordcount() throws IOException {
 	    System.out.println("输入路径：");
 		Scanner input=new Scanner(System.in);
@@ -17,7 +17,7 @@ public class Wordcount {
 		Pattern p =Pattern.compile(REGEX);
 		while((w=fis.readLine()) != null) {
 			Matcher m =p.matcher(w);
-			while(m.find())
+			while(m.find())   //当找到符合条件的内容时单词数+1
 				   wordcount ++;
 		}
         

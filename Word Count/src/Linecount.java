@@ -13,7 +13,7 @@ public  class Linecount {
 	String path=input.nextLine();
 	BufferedReader fis =new BufferedReader(new FileReader(path));
 	int linecount=0;
-	while(fis.readLine()!=null) {
+	while(fis.readLine()!=null) {  //当前行不为空时，行数+1
 		linecount++;
 		}
 	System.out.println("行数："+linecount);

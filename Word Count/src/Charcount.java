@@ -14,10 +14,10 @@ public class Charcount {
 		BufferedReader fis =new BufferedReader(new FileReader(path));
 		int charcount=0; 
 	    String w;
-		Pattern p =Pattern.compile(REGEX);
+		Pattern p =Pattern.compile(REGEX);//匹配合适的字符
 		while((w=fis.readLine()) != null) {
 			Matcher m =p.matcher(w);
-			while(m.find()) 
+			while(m.find())    //找到对应字符时字符数+1
 				
 			   charcount ++;
 		}		

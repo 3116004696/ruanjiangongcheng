@@ -18,19 +18,19 @@ public class Complex {
     	  boolean state = false;
     	  String c;
     	  while((c=fis.readLine())!=null) {
-    			 if(c.contains("/*")) {
+    			 if(c.contains("/*")) {   //多行注释开始标记
     				 notecount++;
     				 state = true;
     			 }
     			 else if(state) {
         			 notecount++;
-    				 if(c.contains("*/")) {
+    				 if(c.contains("*/")) {  //多行注释结束标记
     				 state = false;}
     			 }
-    			 else if(c.contains("//")) {
+    			 else if(c.contains("//")) {  //单行注释标记
     				 notecount++;
     			 }
-    			 else if(c.trim().length()>1) {
+    			 else if(c.trim().length()>1) {  //判定为代码行条件
     				 codecount++;
     			 }
     			 else {spacecount++;}
