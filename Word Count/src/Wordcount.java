@@ -18,7 +18,6 @@ public class Wordcount {
 		while((w=fis.readLine()) != null) {
 			Matcher m =p.matcher(w);
 			while(m.find())
-				
 				   wordcount ++;
 		}
         
