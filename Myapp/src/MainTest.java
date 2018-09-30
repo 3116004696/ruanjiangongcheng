@@ -26,10 +26,10 @@ public class MainTest {
 
 	public static void main(String[] args) throws IOException {
 		// TODO 自动生成的方法存根
-		System.out.println("请输入生成题目数：");
+		System.out.println("请输入生成题目数：-n");
 		Scanner input = new Scanner(System.in);
 		int n = input.nextInt();
-		System.out.println("请输入数值范围：");
+		System.out.println("请输入数值范围：-r");
 		Scanner in = new Scanner(System.in);
 		int r =in.nextInt();
 		Random rand = new Random();		
